@@ -1,0 +1,18 @@
+{
+  "name": "corpus-generator",
+  "version": "1.0.0",
+  "description": "Generate corpus from folder",
+  "main": "index.js",
+  "bin": {
+    "corpus-generator": "./index.js"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Paul Jeremiah Mugaya",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "walk": "^2.3.15"
+  }
+}

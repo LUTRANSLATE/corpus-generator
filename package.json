@@ -1,6 +1,6 @@
 {
   "name": "lu-corpus-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate corpus from folder",
   "main": "index.js",
   "bin": {

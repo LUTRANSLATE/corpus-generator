@@ -10,11 +10,15 @@ program
   .version(package.version)
   .option("-d, --directory <string>", "Folder containing corpus", "./")
   .option("-l, --logs <value>", "Print logs", true)
-  .option("-lo, --left-output <string>", "Left output file", "./corpus.en.txt")
+  .option(
+    "-lo, --left-output <string>",
+    "Left output file",
+    "./test/corpus.en.txt"
+  )
   .option(
     "-ro, --right-output <string>",
     "Right output file",
-    "./corpus.und.txt"
+    "./test/corpus.und.txt"
   )
   .option("-ls, --left-suffix <string>", "Left suffix", ".en.txt")
   .option("-rs, --right-suffix <string>", "Left suffix", ".und.txt")

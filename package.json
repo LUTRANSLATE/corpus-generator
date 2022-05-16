@@ -4,7 +4,7 @@
   "description": "Generate corpus from folder",
   "main": "index.js",
   "bin": {
-    "corpus-generator": "index.js"
+    "lu-corpus-generator": "node index.js"
   },
   "scripts": {
     "start": "node ."

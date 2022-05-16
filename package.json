@@ -1,13 +1,14 @@
 {
   "name": "lu-corpus-generator",
-  "version": "1.0.2",
+  "type": "module",
+  "version": "1.0.3",
   "description": "Generate corpus from folder",
-  "main": "index.js",
+  "main": "./bin/cli.js",
   "bin": {
-    "lu-corpus-generator": "./index.js"
+    "lu-corpus-generator": "./bin/cli.js"
   },
   "scripts": {
-    "start": "node ."
+    "start": "node ./bin/cli.js"
   },
   "author": "Paul Jeremiah Mugaya",
   "license": "ISC",

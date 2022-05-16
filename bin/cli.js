@@ -2,20 +2,28 @@
  * @author Paul Jeremiah Mugaya
  * @email paulmugaya@live.com
  * @create date 2022-05-16 07:13:13
- * @modify date 2022-05-16 07:13:14
+ * @modify date 2022-05-16 07:21:40
  * @desc [description]
  */
 
-const { Command } = require("commander");
-const walk = require("walk");
-const fs = require("fs");
-const path = require("path");
-const package = require("./package.json");
+import { Command } from "commander";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import walk from "walk";
+
+const packageJson = JSON.parse(
+  fs.readFileSync(
+    path.join(fileURLToPath(import.meta.url), "../../package.json"),
+    "utf8"
+  )
+);
+
 const program = new Command();
 
 program
-  .description(package.description)
-  .version(package.version)
+  .description(packageJson.description)
+  .version(packageJson.version)
   .option("-d, --directory <string>", "Folder containing corpus", "./")
   .option("-l, --logs <value>", "Print logs", true)
   .option(

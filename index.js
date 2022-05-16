@@ -1,3 +1,11 @@
+/**
+ * @author Paul Jeremiah Mugaya
+ * @email paulmugaya@live.com
+ * @create date 2022-05-16 07:13:13
+ * @modify date 2022-05-16 07:13:14
+ * @desc [description]
+ */
+
 const { Command } = require("commander");
 const walk = require("walk");
 const fs = require("fs");
